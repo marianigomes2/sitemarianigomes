@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formção academica</title>
+</head>
+<style>
+    body {
+        background-color:
+            #f5d2d8;
+    }
+
+    .menu li {
+
+        border-right: 1px solid #d6e0e4;
+        display: inline-block;
+
+
+    }
+
+    .menu li:last-child {
+        border-right: none;
+        /* ultimo não tem borda */
+    }
+
+    .menu {
+        background-color:
+            #ca8191;
+        list-style-type: none;
+        margin: 20px 30px;
+        padding: 0;
+        overflow: hidden;
+        text-align: center;
+
+    }
+
+    .menu li a {
+        display: grid;
+        color:
+            white;
+        padding: 15px 20px;
+        text-decoration: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+    .menu li a:hover {
+        /* coloca cor no link quando passa o mouse em cima */
+        background-color: #e46f82;
+    }
+
+    .active {
+        background-color: #e46f82;
+        /* cor que fica quando eu estou na pagina */
+    }
+
+    .containerTexto {
+        margin-top: 50px;
+        margin-left: 50px;
+        color: rgb(95, 90, 90);
+
+    }
+
+    .containerTexto p {
+        text-align: left;
+        word-wrap: break-word;
+    }
+
+    .containerTexto ul li {
+        color: #383c3d;
+
+
+
+    }
+
+    .main {
+        display: flex;
+    }
+</style>
+
+<body>
+    <ul class="menu">
+        <li><a href="index.html"> Sobre mim </a></li>
+        <li><a href="formacao.html"> Formação acadêmica </a></li>
+        <li><a href="linkportifolio.html"> Portifólio</a></li>
+        <li><a class="active" href="contato.html"> Contato</a></li>
+
+    </ul>
+
+    <div class="main">
+
+        <div class="containerTexto">
+            <h1>Contato </h1>
+
+            <ul>
+                <li>Email: mariania.gss@gmail.com</li>
+                <li>Telefone: (12)99644-0424</li>
+                <li><a href="https://www.linkedin.com/in/mariani-gomes-a21b5014b" target="_blank"> Acesse aqui o Linkedin</a></li>
+            </ul>
+            <h2 style="margin-top:50px"> Quer me enviar Mensagem? Preenche o formulário abaixo.</h2>
+            <form action="" method="">
+                <table>
+                    <tr>
+                        <th><label for="nome">Nome:</label></th>
+                        <td><input type="text" name="nome" id="nome"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="email">E-mail:</label></th>
+                        <td><input type="email" name="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <th><label for=" msg"> Digite sua Mensagem:</label></th>
+                        <td><textarea name="msg" rows="5" cols="60">Digite sua Mensagem...</textarea></td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button>Enviar</button></td>
+                    </tr>
+                    
+                </table>
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
